@@ -1,0 +1,459 @@
+/* nav样式 */
+nav{
+    margin-top: 80px;
+    width: 100%;
+}
+.nav_con{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 39px;
+}
+
+.nav_con .peak_path{
+    width: 100%;
+    height: 70px;
+}
+.peak_path p{
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    color: #777777;
+    font-size: 14px;
+}
+.detail_wrap{
+    width: 100%;
+}
+.detail_wrap .detail_con{
+    width: 100%;
+}
+
+.detail_con .detail_left{
+    /* display: inline-block; */
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    float: left;
+}
+.detail_left .goods_box{
+    width: 95%;
+    background-color: #777777;
+    margin-bottom: 25px;
+    position: relative;
+}
+.goods_box img{
+    width: 100%;
+}
+.goods_box span{
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.detail_left .goods_bigbox{
+    width: 95%;
+    height: 82.7%;
+    position: absolute;
+    top: 0;
+    left: 470px;
+    z-index: 2;
+    overflow: hidden;
+    display: none;
+}
+.goods_bigbox img{
+    width: 200%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.detail_left .detail_img_wrap{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.detail_img_wrap .cycle_btn{
+    padding-top: 19px;
+    float: left;
+    cursor: pointer;
+}
+.cycle_btn img{
+    width: 32px;
+    height: 32px;
+}
+.detail_img_wrap .items{
+    width: 82%;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+}
+.items ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+}
+.items ul li{
+    /* float: left; */
+    /* position: absolute; */
+    width: 80px;
+    text-align: center;
+}
+.items ul li img{
+    width: 70px;
+    height: auto;
+    border: 1px solid #f4f4f4;
+    float: left;
+    padding: 2px;
+}
+.items ul li:hover img{
+    border-color: #F60012;
+}
+
+.detail_right{
+    float: left;
+    /* display: inline-block; */
+    width: 60%;
+    padding-left: 3%;
+}
+.detail_right .detail_title{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.detail_right .goods_detail_wrap{
+    background: #f4f4f4;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.goods_price{
+    padding-top: 18px;
+}
+.price_txt{
+    width: 7.5%;
+    font-size: 14px;
+    /* display: inline-block; */
+    text-align: justify;
+    float: left;
+}
+.price_txt::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.detail_info{
+    display: block;
+    margin-left: 14px;
+    font-size: 14px;
+    color: #f60012;
+    float: left;
+}
+.detail_info span{
+    cursor: pointer;
+}
+.detail_info .price{
+    font-size: 18px;
+}
+.detail_info .oldprice{
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.goods_Coupon .detail_info span{
+    display: block;
+    background: url(../img/detailimg/ia_100000088.png) center no-repeat;
+    background-size: 100%;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+    height: 24px;
+    width: 95px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.goods_active .active_wrap{
+    margin-left: 14px;
+    float: left;
+}
+
+.active_wrap .active_list_wrap{
+    font-size: 12px;
+    color: #999;
+    padding-bottom: 10px; 
+}
+
+.active_list_wrap .active_icon{
+    width: 60px;
+    color: #f20012;
+    border: 1px solid #f20012;
+    padding: 3px 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.active_wrap .active_width .active_icon{
+    width: 48px;
+}
+.active_list_wrap .active_detail{
+    display: inline-block;
+    margin-left: 30px;
+}
+.active_detail a{
+    display: inline-block;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.detail_right .goods_color{
+    padding: 20px 0;
+}
+.checked{
+    border-color: #f20012;
+}
+.goods_txt{
+    font-size: 14px;
+    float: left;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+.goods_color .select_color{
+    margin-left: 20px;
+}
+.select_color li{
+    cursor: pointer;
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+    height: 60px;
+    border: 1px solid #ccc;
+}
+.select_color .checked{
+    border: 1px solid #f20012;
+}
+.select_color li img{
+    width: 100%;
+}
+
+.goods_size{
+    margin-bottom: 15px;
+}
+.goods_size .select_size{
+    /* float: left;     */
+    margin-left: 20px;
+}
+.select_size li{
+    float: left;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.select_size .checked{
+    border: 1px solid #f20012;
+}
+.goods_num .num_con{
+    padding-top: 15px;
+    float: left;
+}
+
+.num_con span{
+    width: 26px;
+    height: 26px;
+    border: 1px solid #c7c7c7;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.num_con input{
+    float: left;
+    width: 50px;
+    height: 26px;
+    text-align: center;
+    border: 1px solid #c7c7c7;
+}
+.goods_num p{
+    float: left;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+.checked_goods_wrap{
+    padding: 20px 0;
+    font-size: 14px;
+}
+.checked_goods_wrap .checked_goods_color{
+    color: #f20012;
+    margin-left: 10px;
+}
+
+.btn_wrap .add_cart{
+    float: left;
+    width: 230px;
+    height: 60px;
+    background-color: #f20012;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 50px;
+}
+.add_cart img{
+    display: inline-block;
+}
+
+.btn_wrap .add_like{
+    float: left;
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background: #585858;
+}
+.add_like img{
+    display: inline-block;
+}
+
+.nav_con .detail_ps_wrap{
+    margin-top: 100px;
+}
+.detail_ps_con{
+    border: 1px solid #f4f4f4;
+    color: #999;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.detail_ps_con p{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.detail_ps_con .links_customer{
+    display: block;
+}
+
+.links_customer .linkto{
+    color: #f20012;
+    cursor: pointer;
+}
+.detail_like{
+    margin: 50px 0 100px 0;
+}
+
+.detail_like .like_title{
+    font-size: 20px;
+    line-height: 55px;
+    text-align: center;
+}
+.like_title span{
+    margin: 0 10px;
+}
+
+.hot_goods li{
+    border: 1px solid #f4f4f4;
+    float: left;
+    width: 18%;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.hot_goods li img{
+    width: 100%;
+}
+
+.hot_goods li .goods_tit_wrap{
+    width: 100%;
+    padding: 0 12px;
+}
+.goods_tit_wrap .goods_name{
+    border-top: 1px solid #f7f7f7;
+    font-weight: 600;
+    padding: 12px 0;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+.goods_buy .newmoney_box{
+    color: #f60012;
+    float: left;
+}
+.newmoney_box .newmoney{
+    font-size: 16px;
+}
+.goods_buy .oldmoney_box{
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.goods_buy .goods_buy_btn{
+    float: right;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    width: 34.1%;
+    background:#f60012;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.bottom_nav{
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    font-size: 14px;
+    color: #777;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px; /*后期要删除*/
+}
+
+.bottom_nav .bottom_left{
+    float: left;
+}
+.bottom_left >div{
+    float: left;
+    /* display: block; */
+    padding: 0 10px;
+}
+
+.bottom_center{
+    float: left;
+}
+.bottom_center ul li{
+    float: left;
+    padding: 0 15px;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+
+.bottom_right{
+    float: right;
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    background: #f20012;
+    color: #fff;
+    cursor: pointer;
+}
+.bottom_right img{
+    display: inline-block;
+    vertical-align: center;
+}

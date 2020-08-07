@@ -1,0 +1,462 @@
+/*头部开始*/
+body{overflow:hidden}
+html{overflow: auto;}
+.contentwrap{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 0 5px 2px #e5e5e5
+}
+header .head_con{
+    width: 1220px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.head_con .peak_logo{
+    width: 185px;
+    height: 80px;
+    float: left;
+}
+.head_li{
+    height: 100%;
+    float: left;
+    margin-left: 29px;
+}
+.head_li ul{
+    height: 100%;
+}
+.head_li ul .hover{
+    float:left;
+    padding-bottom: 2px;
+}
+.head_li_nav .hover:hover .hover_a{
+    border-bottom: 2px solid #F20015;
+}
+.head_li ul li a{
+    font-size: 17px;
+    padding: 0 17px;
+    color: #000;
+    line-height: 110px;
+    height: 80px;
+    display: block;
+}
+
+/* 下拉框 */
+
+.dropdown .panel{
+    position: fixed;
+    width: 100%;
+    border-bottom: 4px solid #333;
+    background: #fff;
+    font-size: 22px;
+    box-shadow: 0 5px 21px 0px #e4e4e4 inset;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    left: 0;
+    display: none;
+}
+.panel .panel_con{
+    width: 1280px;
+    margin: 0 auto;
+}
+.panel_con .allgoods{
+    margin-left: 3.9%;
+    float: left;
+    text-align: start;
+    width: 12%;
+}
+.panel .panel_con .allgoods_r{
+    float: right;
+    margin-right: 35px;
+}
+.panel_con .allgoods_r li{
+    margin-bottom: 10px;
+}
+.panel_con .allgoods_r a{
+    display: block;
+    height: auto;
+}
+.panel_con .allgoods_r a:hover{
+    border: none;
+}
+.allgoods h1{
+    margin-bottom: 20px;
+}
+.allgoods_r img{
+    width: 100%;
+}
+.allgoods ul li a{
+    line-height: 24px;
+    height: 24px;
+    padding: 0;
+    display: inline-block;
+}
+.allgoods ul li a:hover{
+    border-bottom: 1px solid #F20015;
+}
+
+.head_login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 12px;
+}
+
+.head_login li{
+    padding: 0 8px;
+    border-right: 1px solid #8c338c;
+    float: left;
+    line-height: 12px;
+    font-size: 12px;
+    
+}
+.head_login .dis_block{
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+.head_login .login_name{
+    border: none;
+    cursor: pointer;
+}
+.head_login .naviga_li,.service_li{
+    position: relative;
+}
+.naviga_li ul,.service_li ul{
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    left: -12px;
+    top: 19px;
+    border: 1px solid #f4f4f4;
+    display: none;
+}
+
+.naviga_li li,.service_li li{
+    line-height: 30px;
+    width: 100px;
+    padding-left: 16px;
+    border: none;
+}
+.head_login .icon_phone{
+    border-right: none;
+}
+.icon_phone img{
+    vertical-align: top;
+    display: inline-block;
+}
+.head_login li a{
+    font-size: 12px;
+    color: #333;
+}
+.head_login .phone_down{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+.phone_down img{
+    width: 100%;
+}
+.icon_phone:hover .phone_down{
+    display: block;
+}
+.head_search{
+    width: 230px;
+    height: 30px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.head_search input{
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-indent: .3em;
+}
+.head_search .sear_icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background:#F20015 url(../img/detailimg/ia_10060.png) no-repeat center center;
+}
+
+/* footer样式 */
+footer{
+    width: 100%;
+}
+.footer_con{
+    background: #f4f4f4;
+    color: #585858;
+}
+.footer_con .footer_item_wrap{
+    width: 1280px;
+    margin: 0 auto;
+    height: 113px;
+    padding: 26px 20px 0;
+}
+.footer_item_wrap ul .bd_r{
+    border-right: none;
+}
+.footer_item_wrap ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_item_wrap ul li{
+    border-right: 1px solid #c7c6c6;
+    padding:0 42px;
+    height: 60px;
+}
+.footer_item_wrap ul li span{
+    font-size: 24px;
+    padding-left: 12px;
+}
+.footer_item_wrap img{
+    display: inline-block;
+}
+
+.footer_wrap{
+    width: 100%;
+    background: #000;
+}
+.footer_link_con{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 25px 30px 0px;
+}
+.footer_link_top{
+    height: 189px;
+    border-bottom: 1px solid #3e3e3e;
+}
+.footer_link_top>div{
+    float: left;
+    padding-right: 30px;
+}
+.footer_link_top>div a{
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    line-height: 22px;
+}
+.footer_link_top div .link_tit{
+    color: #c7c7c7;
+    font-weight: bold;
+}
+
+.footer_link_top .vip_fans{
+    float: right;
+    margin-left: 20px;
+}
+.vip_fans img{
+    display: inline-block;
+    margin-right: 8px;
+}
+.vip_fans .vip_wrap{
+    float: right;
+}
+.vip_fans .vip_wrap p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+}
+.vip_wrap span a{
+    display: inline;
+    color: #f60003;
+}
+.vip_wrap span{
+    color: #f60003;
+}
+.vip_wrap i{
+    display: block;
+    width: 70px;
+    height: 21px;
+    border-radius: 8px;
+    color: #fff;
+    line-height: 21px;
+    text-align: center;
+    background: #f60003;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.footer_link_top .wechat_service{
+    float: right;
+    padding-right: 0;
+}
+.wechat_service a{
+    text-align: center;
+}
+.footer_link_top .wechat_shop{
+    float: right;
+    padding-right: 0;
+    margin-right: 14px;
+    width: 84px;
+    text-align: center;
+}
+.footer_link_bottom{
+    height: 95px;
+    line-height: 95px;
+    color: #fff;
+}
+
+.footer_link_bottom img{
+    display: inline-block;
+    margin-right: 34px;
+    height: 32px;
+}
+
+/* 侧边导航 */
+.right_nav_bar{
+    width: 44px;
+    background: #000;
+    position: fixed;
+    right: -45px;
+    top: 80px;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+
+}
+.nav_bar_list>div{
+    cursor: pointer;
+}
+.nav_bar_list img{
+    margin: 0 auto;
+}
+.nav_bar_list .nav_bar_logo{
+    height: 48px;
+    padding: 12px 0;
+}
+.nav_bar_list .nav_bar_cart{
+    height: 105px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.nav_bar_cart img{
+    display: block;
+    width: 24px;
+    padding: 12px 0;
+    margin: 0 auto;
+}
+.nav_bar_cart::before{
+    content: "";
+    display: block;
+    border-top: 1px solid #999;
+    font-size: 14px;
+    width: 22px;
+    margin: 0 auto;
+}
+.nav_bar_cart::after{
+    content: "购物车";
+    font-size: 14px;
+    width: 22px;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    line-height: 1.2;
+}
+.nav_bar_cart span{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    top:0px;
+    padding-top: 28px;
+    
+}
+.nav_bar_cart:hover span{
+    display: block;
+    background: #f60012;
+    color: #fff;
+    font-weight: bold;
+}
+.nav_bar_coupon{
+    height: 48px;
+    position: relative;
+}
+.nav_bar_coupon img{
+    padding: 12px 0;
+}
+.nav_bar_coupon span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f60012;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    display: none;
+}
+.nav_bar_coupon:hover span{
+    display: block;
+}
+
+.nav_bar_like{
+    height: 48px;
+    position: relative;
+}
+.nav_bar_like img{
+    padding: 12px 0;
+}
+.nav_bar_like span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f60012;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    display: none;
+}
+.nav_bar_like:hover span{
+    display: block;
+}
+
+.nav_bar_service{
+    height: 48px;
+    position: relative;
+}
+.nav_bar_service img{
+    padding: 12px 0;
+}
+.nav_bar_service span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f60012;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    display: none;
+}
+.nav_bar_service:hover span{
+    display: block;
+}
+
+.right_nav_bar .backTop{
+    margin: 80px 0 20px 0;
+}
+.backTop img{
+    margin: 0 auto;
+    cursor: pointer;
+}
+.footer_link_bottom a{
+    color: #fff;
+}
